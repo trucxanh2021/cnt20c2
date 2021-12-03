@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 9</title>
+    <style>
+        body{
+            font-size: 62.5%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 400px;
+            margin: auto;
+            box-shadow: 1px 1px 10px #000;
+            padding: 5px;
+        }
+        .container h1{
+            color:#336600;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .container table{
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #E0F9D9;
+        }
+        .container table,td{
+            border:1px solid #003333;
+        }
+        .container td{
+            padding:2px
+        }
+        input[type="number"],input[type="tel"]{
+            width:100px
+        }
+        #diachi{
+            width: 250px;
+        }
+        input[type="button"]{
+            padding:5px 15px;
+            border-radius: 5px;
+            border:none;
+            background-color: rgb(0, 64, 214);
+            color:white;
+            opacity: 1;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        input[type="button"]:hover{
+            opacity: .8;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td>
+                        <input type="text" name="hoten">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td>
+                        <input type="text" name="diachi" id="diachi">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Điện thoại</td>
+                    <td>
+                        <input type="tel" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phái</td>
+                    <td>
+                        <input type="radio" name="phai" checked> Nam
+                        <input type="radio" name="phai"> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nghề nghiệp</td>
+                    <td>
+                        <select name="nghenghiep" id="">
+                            <option value="1">Bác sĩ</option>
+                            <option value="2">Giáo viên</option>
+                            <option value="3">Kỹ sử</option>
+                            <option value="4">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chọn sản phẩm tham gia</td>
+                    <td>
+                        <select name="sanpham" id="" multiple>
+                            <option value="1">Kem đánh răng</option>
+                            <option value="2">Bột giặt</option>
+                            <option value="3">Dầu gội đầu</option>
+                            <option value="4">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Số người dự đoán tham gia</td>
+                    <td>
+                        <input type="number" name="songuoi">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="button" value="Đồng ý" name="dongy">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="color:red;text-align: center;">Bạn đã đăng ký thành công</td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
